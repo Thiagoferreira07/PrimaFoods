@@ -1,0 +1,128 @@
+﻿@model PagedList.IPagedList<EntidadesDAL.EvidenciaAnimais>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Valores calculados";
+}
+
+
+<table border="1" border-size="5px">
+    <caption style="text-align:center">Info</caption>
+    <thead>
+        <tr class="des-tr">
+            <th>
+                @Html.Label(" Qtd animais abatidos ")
+            </th>
+            <th>
+                @Html.Label(" Qtd machos abatidos ")
+            </th>
+            <th>
+                @Html.Label(" Qtd fêmeas abatidas ")
+            </th>
+            <th>
+                @Html.Label(" Qtd animais ágio ")
+            </th>
+            <th>
+                @Html.Label(" Qtd animais deságio ")
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+       
+        <tr>
+
+            <td>
+                @Session["QtdAnimaisAbatidos"]
+            </td>
+            <td>
+                <b>@Session["QtdMachosAbatidos"]</b> - 
+                (@Session["PercentMachos"] % sobre total de animais)
+            </td>
+            <td>
+                <b>@Session["QtdFemeasAbatidas"]</b> -
+                (@Session["PercentFemeas"] % sobre total de animais)
+            </td>
+            <td>
+                <b/>@Session["QtdAnimaisAgio"]</b> -
+                (@Session["PercentAgio"] % sobre total de animais)
+            </td>
+            <td>
+                <b>@Session["QtdAnimaisDesagio"]</b> -
+                (@Session["PercentDesagio"] % sobre total de animais)
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+<br />
+
+<h2 style="text-align:center">Informações e valores</h2>
+
+
+
+<table id="tb1" class="table" border="1">
+    <thead>
+
+        <tr class="des-tr">
+
+            <th>
+                @Html.Label("Pedido / Fornecedor")
+            </th>
+            <th>
+                @Html.Label("Sexo")
+            </th>
+            <th>
+                @Html.Label("Peso")
+            </th>
+            <th>
+                @Html.Label("Valor Arroba")
+            </th>
+            <th>
+                @Html.Label("Valor Total")
+            </th>
+            <th>
+                @Html.Label("Motivo")
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodPedido) -
+                    @Html.DisplayFor(modelItem => item.Fornecedor)
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sexo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Peso)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ValorBase)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CalculoTotalDentes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Motivo)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div style="float:right">
+    @using (Html.BeginForm("Calcular", "Evidencias", FormMethod.Get))
+    {
+        <input type="submit" value="Calcular" class="btn btn-default sombrabtn" style="color:white;font-size:20px; background-color:dimgray" />
+    }
+</div>
+<br />
+<div class="paginacao" style="text-align:center">
+    Página @Model.PageNumber de @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { pagina = page }))
+
+</div>
+

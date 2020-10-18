@@ -1,0 +1,17 @@
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\EntidadesDAL.dll.config
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\EntidadesDAL.dll
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\EntidadesDAL.pdb
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\EntityFramework.dll
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\EntityFramework.xml
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\obj\Debug\EntidadesDAL.csprojAssemblyReference.cache
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\obj\Debug\EntidadesDAL.csproj.CoreCompileInputs.cache
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\obj\Debug\EntidadesDAL.csproj.CopyComplete
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\obj\Debug\EntidadesDAL.dll
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\obj\Debug\EntidadesDAL.pdb
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\PagedList.dll
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\PagedList.Mvc.dll
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\PagedList.xml
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\PagedList.Mvc.xml
+C:\ProjetoNovo\PrimaFoods\PrimaFoods\EntidadesDAL\bin\Debug\Neat.Procedure.dll
